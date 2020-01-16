@@ -1,12 +1,16 @@
 import React from 'react';
+import styles from './App.scss';
+import List from '../List/List.js';
+import Hero from '../Hero/Hero.js';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>My first React app</h1>
-        <h2>Hello World!</h2>
-      </div>
+      <main className={styles.component}>
+        <h1 className={styles.title}>My first React app</h1>
+        <Hero />
+        <List />
+      </main>
     )
   }
 }
