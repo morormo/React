@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Column.scss';
+import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
-class Column extends React.Component {
+class Card extends React.Component {
   static propTypes = {
-    columnTitle: PropTypes.string,
+    CardTitle: PropTypes.string,
   
   }
 
@@ -22,4 +22,4 @@ class Column extends React.Component {
 
 
 
-export default Column;
+export default Card;
