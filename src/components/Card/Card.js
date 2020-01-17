@@ -3,8 +3,8 @@ import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
 class Card extends React.Component {
-  static propTypes = {
-    CardTitle: PropTypes.string,
+  static PropTypes = {
+    title: PropTypes.node.isRequired,
   
   }
 
