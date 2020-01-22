@@ -15,7 +15,7 @@ class Card extends React.Component {
           {this.props.title}
         </h3>
       </section>
-    )
+    );
   }
 }
 
