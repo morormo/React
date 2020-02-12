@@ -6,6 +6,7 @@ import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Column from '../Column/ColumnContainer';
 import Creator from '../Creator/Creator';
+import Contianer from '../Container/Container';
 
 
 
@@ -26,19 +27,21 @@ class List extends React.Component {
 
     return (
       <section className={styles.component}>
-        <Hero titleText= {title} pictureSrc={picture}/>
-        <div className={styles.description}>
-          {ReactHtmlParser(description)}
-        </div>
-        
-        <div className={styles.columns}>
-          {columns.map(columnData => (
-            <Column key={columnData.id} {...columnData} />
-          ))}
-        </div>
-        <div className={styles.creator}>
-          <Creator text={settings.columnCreatorText} action={addColumn}/>
-        </div>
+        <Contianer>
+          <Hero titleText= {title} pictureSrc={picture}/>
+          <div className={styles.description}>
+            {ReactHtmlParser(description)}
+          </div>
+          
+          <div className={styles.columns}>
+            {columns.map(columnData => (
+              <Column key={columnData.id} {...columnData} />
+            ))}
+          </div>
+          <div className={styles.creator}>
+            <Creator text={settings.columnCreatorText} action={addColumn}/>
+          </div>
+        </Contianer>
       </section>
     );
   }
