@@ -96,6 +96,12 @@ const lists = [
     description: 'Interesting things I want to check out!',
     picture: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Mamy <sup>to!</sup>',
+    description: 'Test',
+    picture: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
